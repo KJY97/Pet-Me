@@ -7,11 +7,9 @@ import Signup from '../views/user/Signup'
 import Taping from '../views/taping/Taping'
 import SimilarAnimal from '../views/similaranimal/SimilarAnimal'
 import Search from '../views/search/Search'
-import SearchResult from '../views/search/SearchResult'
 import FeedCreate from '../views/feed/FeedCreate'
 import NewsFeed from '../views/feed/NewsFeed'
 import UserFeed from '../views/feed/UserFeed'
-import FeedDetail from '../views/feed/FeedDetail'
 
 
 Vue.use(VueRouter)
@@ -54,11 +52,6 @@ const routes = [
   },
 
   {
-    path: '/search/:searchWord',
-    name: 'SearchResult',
-    component: SearchResult,
-  },
-  {
     path: '/feed/create',
     name: 'FeedCreate',
     component: FeedCreate,
@@ -69,14 +62,9 @@ const routes = [
     component: NewsFeed,
   },
   {
-    path: '/feed/userfeed/:yourUserNumber',
+    path: '/feed/userfeed',
     name: 'UserFeed',
     component: UserFeed,
-  },
-  {
-    path: '/feed/:feedNumber',
-    name: 'FeedDetail',
-    component: FeedDetail,
   },
 ]
 
