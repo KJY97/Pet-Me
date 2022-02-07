@@ -93,7 +93,7 @@ export default {
             this.credentials.userPreference = res.selected;
             axios({
                 method: "post",
-                url: "http://localhost:8080/user/",
+                url: "http://i6b106.p.ssafy.io:8080/user/",
                 data: this.credentials,
             })
                 .then(() => {
